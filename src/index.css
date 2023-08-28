@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:wght@500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply font-nunito font-[500];
+}
+
+.bg-primary {
+	@apply bg-[#7600ba];
+}
+
+.bg-primary-hover {
+	@apply hover:bg-[#9549c1];
+}
