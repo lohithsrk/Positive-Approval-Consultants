@@ -89,7 +89,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								to='/'
-								className='text-center block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:bg-primary md:p-0'
+								className='text-center block py-2 pl-3 pr-4 text-primary text-primary-hover rounded md:bg-transparent md:bg-primary md:p-0'
 								aria-current='page'
 							>
 								Home
@@ -98,7 +98,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								to='/about'
-								className='text-center block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:bg-primary md:p-0'
+								className='text-center block py-2 pl-3 pr-4 text-gray-900 rounded text-primary-hover md:p-0'
 							>
 								About
 							</Link>

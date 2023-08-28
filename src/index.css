@@ -14,3 +14,11 @@
 .bg-primary-hover {
 	@apply hover:bg-[#9549c1];
 }
+
+.text-primary {
+	@apply text-[#7600ba];
+}
+
+.text-primary-hover {
+	@apply hover:text-[#7600ba];
+}
