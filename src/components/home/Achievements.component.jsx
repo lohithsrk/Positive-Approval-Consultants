@@ -7,7 +7,7 @@ const Achievements = () => {
 	const { startYear } = useCountUp({
 		ref: yearRef,
 		start: 0,
-		end: 22,
+		end: 12,
 		duration: 2.5,
 		suffix: '+'
 	});
