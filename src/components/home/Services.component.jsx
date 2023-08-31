@@ -1,7 +1,7 @@
 const Services = () => {
 	return (
-		<section className='bg-white'>
-			<div className='container mx-auto'>
+		<section className='bg-gray-50'>
+			<div className='max-w-screen-xl mx-auto'>
 				<div className='-mx-4 flex flex-wrap'>
 					<div className='w-full px-4'>
 						<div className='mx-auto mb-12 max-w-[510px] text-center lg:mb-20'>

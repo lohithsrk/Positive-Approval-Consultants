@@ -11,7 +11,7 @@ const Achievements = () => {
 		duration: 2.5,
 		suffix: '+'
 	});
-	
+
 	const vastuRef = useRef(null);
 	const { startVastu } = useCountUp({
 		ref: vastuRef,
@@ -70,29 +70,29 @@ const Achievements = () => {
 					className='object-bottom w-full h-full object-cover '
 				/>
 			</div> */}
-			<div className='w-full h-full flex gap-x-10 items-center justify-center relative after:absolute after:content-[""] after:bg-white after:bottom-0 after:left-0 after:w-full after:h-1/2 after:-z-10'>
-				<div className='text-center bg-white text-black p-5 w-48 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
+			<div className='w-full h-full flex gap-x-10 items-center justify-center relative after:absolute after:content-[""] after:bg-gray-50 after:bottom-0 after:left-0 after:w-full after:h-1/2 after:-z-10'>
+				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
 					<h1
 						className='text-5xl flex items-center justify-center'
 						ref={yearRef}
 					/>
 					<h3 className='text-lg'>Years of Delivering Happiness</h3>
 				</div>
-				<div className='text-center bg-white text-black p-5 w-48 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
+				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
 					<h1
 						className='text-5xl flex items-center justify-center'
 						ref={vastuRef}
 					/>
 					<h3 className='text-lg'>Vastu Compliance for prosperity</h3>
 				</div>
-				<div className='text-center bg-white text-black p-5 w-48 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
+				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
 					<h1
 						className='text-5xl flex items-center justify-center'
 						ref={clientsRef}
 					/>
 					<h3 className='text-lg'>Happy Clients</h3>
 				</div>
-				<div className='text-center bg-white text-black p-5 w-48 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
+				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
 					<h1
 						className='text-5xl flex items-center justify-center'
 						ref={deliveryRef}

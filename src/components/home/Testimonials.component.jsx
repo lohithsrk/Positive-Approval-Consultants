@@ -9,25 +9,21 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Testimonials = () => {
 	return (
-		<div className=''>
-			<div className='flex items-center justify-between h-full w-full absolute z-0 bg-white'>
-				<div className='w-1/3 bg-white h-full' />
-				<div className='w-4/6 ml-16 bg-gray-100 h-full' />
-			</div>
-			<div className='xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40 bg-white'>
+		<div className='bg-gray-50 py-10'>
+			<div className='xl:px-20 px-8 max-w-screen-xl mx-auto relative z-40 bg-gray-50'>
 				<CarouselProvider
 					naturalSlideWidth={100}
 					isIntrinsicHeight={true}
 					totalSlides={2}
 				>
-					<h1 className='text-5xl font-bold xl:block hidden leading-tight text-gray-800'>
-						What our customers are
-						<br />
-						saying
-					</h1>
-					<h1 className='text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-gray-800'>
-						What our customers are saying
-					</h1>
+					<div className='mx-auto max-w-[510px] text-center mb-10'>
+						<span className='text-primary mb-2 block text-lg font-semibold'>
+							Our Testimonials
+						</span>
+						<h2 className='text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]'>
+							Whar Our Customers Are Saying
+						</h2>
+					</div>
 					<Slider>
 						<Slide index={0} tabIndex='null'>
 							<div className='flex'>
@@ -36,7 +32,7 @@ const Testimonials = () => {
 										<img
 											src='https://i.ibb.co/4g1D9cv/imgslider1.png'
 											alt='image of profile'
-											className='w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded'
+											className='w-full h-full flex-shrink-0 object-fit object-cover rounded'
 										/>
 										<div className='w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full'>
 											<img
@@ -79,7 +75,7 @@ const Testimonials = () => {
 										<img
 											src='https://i.ibb.co/4g1D9cv/imgslider1.png'
 											alt='image of profile'
-											className='w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded'
+											className='w-full h-full flex-shrink-0 object-fit object-cover rounded'
 										/>
 										<div className='w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full'>
 											<img
