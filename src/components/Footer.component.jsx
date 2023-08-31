@@ -8,14 +8,14 @@ const Footer = () => {
 	const { t } = useTranslation();
 
 	return (
-		<footer className='bg-white shadow-[-0_-35px_-60px_rgba(0,0,0,1)]'>
+		<footer className='bg-gray-100'>
 			<div className='mx-auto w-full max-w-screen-xl px-10 py-10 md:py-6 lg:py-8'>
 				<div className='flex md:flex-row flex-col md:justify-between'>
 					<div className='mb-6 md:mb-0 flex items-center justify-center'>
 						<Link to='/' className='flex items-center'>
 							<img
 								src={logo}
-								className='h-8 mr-3'
+								className='h-16 mr-3'
 								alt='Positive Approval Consultants'
 							/>
 						</Link>
@@ -108,7 +108,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
+				<hr className='my-6 border-gray-200 sm:mx-auto lg:my-8' />
 				<div className='flex flex-col md:flex-row justify-center items-center md:justify-between'>
 					<span className='text-sm text-gray-500 sm:text-center'>
 						© 2023{' '}

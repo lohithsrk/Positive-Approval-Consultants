@@ -7,12 +7,12 @@ const Navbar = () => {
 	const { i18n } = useTranslation();
 
 	return (
-		<nav className='bg-white border-gray-200 shadow-lg'>
-			<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10 md:px-4'>
+		<nav className='bg-white border-gray-200 shadow-lg fixed w-full z-50'>
+			<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-10 md:px-4'>
 				<Link to='/' className='flex items-center'>
 					<img
 						src={logo}
-						className='h-8 mr-3'
+						className='h-12 mr-3'
 						alt='Positive Approval Consultants'
 					/>
 				</Link>
