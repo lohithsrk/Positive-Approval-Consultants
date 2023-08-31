@@ -11,6 +11,7 @@ const Achievements = () => {
 		duration: 2.5,
 		suffix: '+'
 	});
+	
 	const vastuRef = useRef(null);
 	const { startVastu } = useCountUp({
 		ref: vastuRef,
