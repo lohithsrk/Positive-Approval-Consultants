@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Container from './about';
+import { Container } from './about';
 
 const SectionTitle = (props) => {
 	return (

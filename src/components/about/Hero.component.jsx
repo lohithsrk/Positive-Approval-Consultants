@@ -1,5 +1,5 @@
 import CountUp from 'react-countup';
-import Container from './container';
+import Container from './Container.component';
 
 const Hero = () => {
 	return (

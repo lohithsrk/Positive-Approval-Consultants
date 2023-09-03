@@ -1,4 +1,4 @@
-import Container from './container';
+import Container from './Container.component';
 import { Link } from 'react-router-dom';
 
 const Cta = () => {

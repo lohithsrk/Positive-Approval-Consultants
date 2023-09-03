@@ -1,4 +1,4 @@
-import Container from './container';
+import Container from './Container.component';
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import SectionTitle from '../SectionTitle.component';
