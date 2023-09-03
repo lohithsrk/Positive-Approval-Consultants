@@ -1,7 +1,8 @@
 import logo from './logo.png'
+import logoWhite from './logo-white.png'
+import services from './services.jpg'
 import broll from './broll.mp4'
-import achievements from './achievements.jpg'
 
 export {
-    logo, broll, achievements
+    logo, broll, logoWhite, services
 }

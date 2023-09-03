@@ -7,7 +7,7 @@ export default {
     extend: {
       fontFamily: {
         nunito: ['nunito', 'roboto'],
-        koulen: ['koulen', 'roboto'],
+        koulen: ['koulen', 'nunito'],
       },
     },
   },

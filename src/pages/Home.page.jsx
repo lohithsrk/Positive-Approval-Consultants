@@ -1,7 +1,6 @@
 import {
 	Achievements,
 	Banner,
-	Contact,
 	Projects,
 	Services,
 	Testimonials
@@ -11,11 +10,10 @@ const Home = () => {
 	return (
 		<div className='overflow-x-hidden'>
 			<Banner />
-			<Achievements />
 			<Services />
+			<Achievements />
 			<Projects />
 			<Testimonials />
-			<Contact />
 		</div>
 	);
 };
