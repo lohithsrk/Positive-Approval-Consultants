@@ -1,8 +1,8 @@
 import logo from './logo.png'
+import logoWhite from './logo-white.png'
+import services from './services.jpg'
 import broll from './broll.mp4'
-import achievements from './achievements.jpg'
-import dummy from './siruseri-it-park.png'
 
 export {
-    logo, broll, achievements, dummy
+    logo, broll, logoWhite, services
 }

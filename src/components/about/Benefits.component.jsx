@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Container from './container';
 
@@ -19,7 +20,6 @@ const Benefits = (props) => {
 							alt='Benefits'
 							className={'object-cover'}
 							placeholder='blur'
-							blurDataURL={data.image.src}
 						/>
 					</div>
 				</div>
@@ -31,7 +31,7 @@ const Benefits = (props) => {
 				>
 					<div>
 						<div className='flex flex-col w-full mt-4'>
-							<h3 className='max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl'>
+							<h3 className='max-w-2xl mt-3 text-3xl font-bold leading-snug  text-gray-800 lg:leading-tight lg:text-4xl'>
 								{data.title}
 							</h3>
 

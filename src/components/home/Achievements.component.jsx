@@ -59,45 +59,46 @@ const Achievements = () => {
 		};
 	}, [startClients, startDelivery, startVastu, startYear]);
 	return (
-		<div
-			className='w-full h-[40vh] relative flex items-center justify-center'
-			ref={ref}
-		>
-			{/* <div className='relative w-full h-full'>
-				<img
-					src={achievements}
-					alt='Achievements'
-					className='object-bottom w-full h-full object-cover '
-				/>
-			</div> */}
-			<div className='w-full h-full flex gap-x-10 items-center justify-center relative after:absolute after:content-[""] after:bg-gray-50 after:bottom-0 after:left-0 after:w-full after:h-1/2 after:-z-10'>
-				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
-					<h1
-						className='text-5xl flex items-center justify-center'
-						ref={yearRef}
-					/>
-					<h3 className='text-lg'>Years of Delivering Happiness</h3>
-				</div>
-				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
-					<h1
-						className='text-5xl flex items-center justify-center'
-						ref={vastuRef}
-					/>
-					<h3 className='text-lg'>Vastu Compliance for prosperity</h3>
-				</div>
-				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
-					<h1
-						className='text-5xl flex items-center justify-center'
-						ref={clientsRef}
-					/>
-					<h3 className='text-lg'>Happy Clients</h3>
-				</div>
-				<div className='text-center bg-white text-black p-5 w-56 h-48 flex items-center justify-center flex-col shadow-lg rounded-md'>
-					<h1
-						className='text-5xl flex items-center justify-center'
-						ref={deliveryRef}
-					/>
-					<h3 className='text-lg'>Sq,ft., Delivered</h3>
+		<div className='bg-primary w-full h-[60vh]' ref={ref}>
+			<div className='max-w-screen-xl mx-auto h-full text-white text-center flex flex-col items-center justify-center'>
+				<h2 className='text-5xl mb-3'>What have we achieved</h2>
+				<p className='mb-14 text-xl'>
+					We’re here to help you to finding a best way
+				</p>
+				<div className='flex gap-x-10'>
+					<div>
+						<h1
+							className='text-5xl flex items-center justify-center'
+							ref={yearRef}
+						/>
+						<h3 className='text-lg'>
+							Years of <br /> Delivering Happiness
+						</h3>
+					</div>
+
+					<div>
+						<h1
+							className='text-5xl flex items-center justify-center'
+							ref={vastuRef}
+						/>
+						<h3 className='text-lg'>
+							Vastu Compliance for <br /> prosperity
+						</h3>
+					</div>
+					<div>
+						<h1
+							className='text-5xl flex items-center justify-center'
+							ref={clientsRef}
+						/>
+						<h3 className='text-lg'>Happy Clients</h3>
+					</div>
+					<div>
+						<h1
+							className='text-5xl flex items-center justify-center'
+							ref={deliveryRef}
+						/>
+						<h3 className='text-lg'>Sq,ft., Delivered</h3>
+					</div>
 				</div>
 			</div>
 		</div>

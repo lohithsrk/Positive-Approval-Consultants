@@ -6,7 +6,7 @@ const Banner = () => {
 	const scrollRef = useRef('');
 	const heroTopRef = useRef('');
 
-	useEffect(( ) => {
+	useEffect(() => {
 		scrollRef.current.scrollIntoView({ behavior: 'smooth' });
 	}, []);
 
@@ -19,7 +19,7 @@ const Banner = () => {
 							top: 0,
 							behavior: 'smooth'
 						});
-						setIsCenter(true);
+						setIsCenter(isCenter ? false : true);
 					}
 				});
 			},
@@ -49,15 +49,21 @@ const Banner = () => {
 				/>
 			</div>
 			<div className='relative'>
-				<div className='h-[50vh] relative' ref={heroTopRef}></div>
+				<div className='h-[30vh] relative' ref={heroTopRef}></div>
 
-				<div className='h-[50vh] relative' ref={scrollRef}>
+				<div className='h-[70vh] relative' ref={scrollRef}>
 					<div
-						className={`w-36 absolute transition-all ${
-							isCenter ? 'top-0' : 'top-1/2'
-						} left-1/2 -translate-x-1/2 -translate-y-1/2`}
+						className={`flex flex-col items-center justify-center absolute transition-all ${
+							isCenter ? 'top-1/4 -translate-y-1/2' : 'top-1/3'
+						} left-1/2 -translate-x-1/2`}
 					>
-						<img src={logo} alt='APC' />
+						<img src={logo} alt='APC' className='w-36' />
+						<h1 className='text-white mt-3 text-4xl'>
+							Positive Approval Consultancy
+						</h1>
+						<p className='text-white'>
+							Embark on Your Real Estate Journey with Us
+						</p>
 					</div>
 				</div>
 			</div>

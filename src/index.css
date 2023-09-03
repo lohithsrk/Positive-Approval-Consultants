@@ -8,17 +8,26 @@
 }
 
 .bg-primary {
-	@apply bg-[#7600ba];
+	@apply bg-[#0014b6];
 }
 
 .bg-primary-hover {
-	@apply hover:bg-[#9549c1];
+	@apply hover:bg-[#0116b1];
 }
 
 .text-primary {
-	@apply text-[#7600ba];
+	@apply text-[#0014b6];
 }
 
 .text-primary-hover {
-	@apply hover:text-[#7600ba];
+	@apply hover:text-[#0116b1];
+}
+
+.border-primary {
+	@apply border-[#0116b1];
+}
+
+.card-hover {
+	transition: background 300 ease-in-out;
+	@apply hover:bg-blue-100;
 }

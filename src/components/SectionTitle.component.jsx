@@ -1,5 +1,5 @@
-import React from 'react';
-import Container from './container';
+/* eslint-disable react/prop-types */
+import Container from './about/container';
 
 const SectionTitle = (props) => {
 	return (
@@ -15,7 +15,7 @@ const SectionTitle = (props) => {
 			)}
 
 			{props.title && (
-				<h2 className='max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl '>
+				<h2 className='max-w-2xl mt-3 text-3xl font-bold leading-snug text-gray-800 lg:leading-tight lg:text-4xl '>
 					{props.title}
 				</h2>
 			)}

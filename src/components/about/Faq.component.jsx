@@ -1,13 +1,19 @@
 import Container from './container';
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
+import SectionTitle from '../SectionTitle.component';
 
 const Faq = () => {
 	return (
 		<Container className='!p-0'>
+			<SectionTitle pretitle='FAQ' title='Frequently Asked Questions'>
+				Curious about how we operate? Explore our FAQ section for answers to
+				common queries about our services, processes, and mission. Discover what
+				sets us apart.
+			</SectionTitle>
 			<div className='w-full max-w-2xl p-2 mx-auto rounded-2xl'>
 				{faqdata.map((item, index) => (
-					<div key={item.question} className='mb-5'>
+					<div className='mb-5' key={index}>
 						<Disclosure>
 							{({ open }) => (
 								<>
@@ -34,22 +40,25 @@ const Faq = () => {
 
 const faqdata = [
 	{
-		question: 'Is this template completely free to use?',
-		answer: 'Yes, this template is completely free to use.'
-	},
-	{
-		question: 'Can I use it in a commercial project?',
-		answer: 'Yes, this you can.'
-	},
-	{
-		question: 'What is your refund policy? ',
+		question: 'What services does Positive Approval Consultants offer?',
 		answer:
-			"If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked."
+			'Positive Approval Consultants specializes in a range of services, including approval facilitation, NOC and clearance procurement, construction management, and renovation expertise. We are your trusted partner for all your project needs.'
 	},
 	{
-		question: 'Do you offer technical support? ',
+		question: 'How long does the approval process typically take?',
 		answer:
-			"No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support."
+			' duration of the approval process can vary depending on the specific project and local regulations. Our team works diligently to expedite approvals, but timelines may differ from case to case.'
+	},
+	{
+		question: 'How can I get in touch with your team?',
+		answer:
+			"You can easily reach out to us through our contact page on our website. We're also available by phone and email. We look forward to assisting you with your inquiries and needs."
+	},
+	{
+		question:
+			'What sets "Positive Approval Consultants" apart from other consulting firms?',
+		answer:
+			'What distinguishes us is our people-centric approach, dedication to excellence, and commitment to transparency. We prioritize understanding your unique needs and challenges, tailoring our services to deliver optimal results.'
 	}
 ];
 

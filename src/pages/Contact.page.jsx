@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { HiMail, HiLocationMarker } from 'react-icons/hi';
+import { primaryColor } from '../utilities/constants.util';
 
 const Contact = () => {
-	const { t } = useTranslation();
-
 	const [formDetails, setFormDetails] = useState({
 		fullName: '',
 		company: '',
@@ -22,50 +20,44 @@ const Contact = () => {
 
 	return (
 		<div className=''>
-			<div className='bg-[#7600ba] w-full h-[40vh] px-4'>
-				<div className='max-w-screen-xl h-full md:pb-12 mx-auto flex flex-col md:justify-end md:items-start items-center justify-center font-koulen text-white'>
-					<h1 className='font-mono font-extrabold text-2xl '>
-						{t('contact.title')}
-					</h1>
+			<div className='bg-primary w-full h-[40vh] px-4'>
+				<div className='max-w-screen-xl h-full md:pb-12 mx-auto flex flex-col md:justify-end md:items-start items-center justify-center  text-white'>
+					<h1 className='font-mono font-extrabold text-2xl '>Contact Us</h1>
 					<h2 className='font-mono font-extrabold text-4xl text-center md:text-left'>
-						{t('contact.subTitleLine1')} <br />
-						{t('contact.subTitleLine2')}
+						Let&apos;s talk about <br />
+						your problem.
 					</h2>
 				</div>
 			</div>
-			<div className='flex flex-col md:flex-row gap-7 max-w-screen-xl px-4 mx-auto mt-10 md:h-[40vh] justify-center items-center md:items-start md:justify-start'>
+			<div className='flex flex-col md:flex-row gap-7 max-w-screen-xl mx-auto mt-10 h-[53vh] justify-center items-center md:items-start md:justify-start'>
 				<div className='flex'>
-					<HiLocationMarker color='#7600ba' className='w-8 h-8 mr-2' />
+					<HiLocationMarker color={primaryColor} className='w-8 h-8 mr-2' />
 					<div>
-						<h3 className='text-xl font-extrabold'>
-							{t('contact.locationTitle')}
-						</h3>
-						<p className='text-gray-600'>{t('contact.address.line1')}</p>
-						<p className='text-gray-600'>{t('contact.address.line2')}</p>
-						<p className='text-gray-600'>{t('contact.address.line3')}</p>
+						<h3 className='text-xl font-extrabold'>Our Location</h3>
+						<p className='text-gray-600'>Door No.3, Bharathi Block,</p>
+						<p className='text-gray-600'>Gopal Street, Jafferkhanpet</p>
+						<p className='text-gray-600'>Chennai - 600083</p>
 					</div>
 				</div>
 				<div className='flex'>
-					<HiMail color='#7600ba' className='w-8 h-8 mr-2' />
+					<HiMail color={primaryColor} className='w-8 h-8 mr-2' />
 					<div>
-						<h3 className='text-xl font-extrabold'>
-							{t('contact.contactDetails')}
-						</h3>
-						<p className='text-gray-600'>{t('contact.email')}</p>
-						<p className='text-gray-600'>{t('contact.phone')}</p>
+						<h3 className='text-xl font-extrabold'>How can we help?</h3>
+						<p className='text-gray-600'>positiveapproval@gmail.com</p>
+						<p className='text-gray-600'>+91 9884881302</p>
 					</div>
 				</div>
 			</div>
 			<form className='md:w-2/6 md:absolute md:right-0 md:-translate-x-1/4 md:top-1/2 md:-translate-y-[45%] bg-white mt-10 md:mt-0 md:py-10 px-10 rounded-lg shadow-lg'>
 				<h1 className='text-3xl font-bold mb-2 text-center md:text-left'>
-					{t('contact.form.title')}
+					Send us a Message
 				</h1>
 				<div className='mb-3'>
 					<label
 						htmlFor='fullName'
 						className='block mb-2 text-sm font-medium text-gray-900'
 					>
-						{t('contact.form.fullName')}
+						Full Name
 					</label>
 					<input
 						type='text'
@@ -84,7 +76,7 @@ const Contact = () => {
 						htmlFor='company'
 						className='block mb-2 text-sm font-medium text-gray-900'
 					>
-						{t('contact.form.company')}
+						Company
 					</label>
 					<input
 						type='text'
@@ -93,7 +85,7 @@ const Contact = () => {
 						value={formDetails['company']}
 						onChange={handleChange}
 						className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5'
-						placeholder={t('contact.form.company')}
+						placeholder='Company'
 						required
 					/>
 				</div>
@@ -102,7 +94,7 @@ const Contact = () => {
 						htmlFor='phone'
 						className='block mb-2 text-sm font-medium text-gray-900'
 					>
-						{t('contact.form.phoneNumber')}
+						Phone number
 					</label>
 					<input
 						type='tel'
@@ -121,7 +113,7 @@ const Contact = () => {
 						htmlFor='email'
 						className='block mb-2 text-sm font-medium text-gray-900'
 					>
-						{t('contact.form.emailAddress')}
+						Email address
 					</label>
 					<input
 						type='email'
@@ -139,7 +131,7 @@ const Contact = () => {
 					type='submit'
 					className='md:w-auto text-white bg-primary bg-primary-hover font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center transition-all'
 				>
-					{t('contact.submit')}
+					Submit
 				</button>
 			</form>
 		</div>
