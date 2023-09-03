@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import SectionTitle from '../SectionTitle.component';
-import Container from './container';
+import Container from './Container.component';
 
 import userOneImg from '/img/user1.jpg';
 

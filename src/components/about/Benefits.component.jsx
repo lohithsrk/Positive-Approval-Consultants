@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Container from './container';
+import Container from './Container.component';
 
 const Benefits = (props) => {
 	const { data } = props;
