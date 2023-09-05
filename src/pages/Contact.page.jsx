@@ -19,8 +19,8 @@ const Contact = () => {
 	};
 
 	return (
-		<div className=''>
-			<div className='bg-primary w-full h-[40vh] px-4'>
+		<div className='flex flex-col md:block'>
+			<div className='order-1 bg-primary w-full h-[40vh] px-4'>
 				<div className='max-w-screen-xl h-full md:pb-12 mx-auto flex flex-col md:justify-end md:items-start items-center justify-center  text-white'>
 					<h1 className='font-mono font-extrabold text-2xl '>Contact Us</h1>
 					<h2 className='font-mono font-extrabold text-4xl text-center md:text-left'>
@@ -29,7 +29,7 @@ const Contact = () => {
 					</h2>
 				</div>
 			</div>
-			<div className='flex flex-col md:flex-row gap-7 max-w-screen-xl mx-auto mt-10 h-[53vh] justify-center items-center md:items-start md:justify-start'>
+			<div className='order-3 flex flex-col md:flex-row gap-7 max-w-screen-xl mx-auto mt-10 mb-10 md:mb-0 md:h-[53vh] justify-center items-center md:items-start md:justify-start'>
 				<div className='flex'>
 					<HiLocationMarker color={primaryColor} className='w-8 h-8 mr-2' />
 					<div>
@@ -48,7 +48,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<form className='md:w-2/6 md:absolute md:right-0 md:-translate-x-1/4 md:top-1/2 md:-translate-y-[45%] bg-white mt-10 md:mt-0 md:py-10 px-10 rounded-lg shadow-lg'>
+			<form className='order-2 md:w-2/6 md:absolute md:right-0 md:-translate-x-1/4 md:top-1/2 md:-translate-y-[45%] bg-white mt-10 md:mt-0 md:py-10 px-10 rounded-lg md:shadow-lg'>
 				<h1 className='text-3xl font-bold mb-2 text-center md:text-left'>
 					Send us a Message
 				</h1>

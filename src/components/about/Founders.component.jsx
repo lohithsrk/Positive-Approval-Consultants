@@ -14,7 +14,7 @@ const Founders = () => {
 			</SectionTitle>
 			<div className=' flex justify-center'>
 				<div className='lg:col-span-2 xl:col-auto'>
-					<div className='flex flex-col justify-between w-96 h-full bg-gray-100 px-14 rounded-2xl py-14 '>
+					<div className='flex flex-col justify-between md:w-96 h-full bg-gray-100 md:px-14 rounded-2xl md:py-14 px-8 py-8'>
 						<p className='text-lg leading-normal '>
 							Mr. Amudhasagaran, our visionary founder in the real estate
 							industry, brings profound insights and unwavering commitment. His
@@ -47,17 +47,6 @@ function Avatar(props) {
 				<div className='text-gray-600 '>{props.title}</div>
 			</div>
 		</div>
-	);
-}
-
-function Mark(props) {
-	return (
-		<>
-			{' '}
-			<mark className='text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 '>
-				{props.children}
-			</mark>{' '}
-		</>
 	);
 }
 

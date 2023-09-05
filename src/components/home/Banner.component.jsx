@@ -38,8 +38,8 @@ const Banner = () => {
 
 	const [isCenter, setIsCenter] = useState(false);
 	return (
-		<>
-			<div className='w-full h-screen fixed -z-10 after:absolute after:content-[""] after:bg-black/30 after:top-0 after:left-0 after:w-full after:h-full '>
+		<div className='relative'>
+			<div className='w-full aspect-video md:h-screen md:fixed relative -z-10 after:absolute after:content-[""] after:bg-black/30 after:top-0 after:left-0 after:w-full md:after:h-full after:aspect-video'>
 				<video
 					src={broll}
 					className='w-full h-full object-cover'
@@ -48,7 +48,7 @@ const Banner = () => {
 					loop
 				/>
 			</div>
-			<div className='relative'>
+			<div className='relative hidden md:block'>
 				<div className='h-[30vh] relative' ref={heroTopRef}></div>
 
 				<div className='h-[70vh] relative' ref={scrollRef}>
@@ -67,7 +67,14 @@ const Banner = () => {
 					</div>
 				</div>
 			</div>
-		</>
+			<div className='md:hidden w-full aspect-video text-center flex items-center justify-center flex-col absolute top-1/2 -translate-y-1/2'>
+				<img src={logo} alt='APC' className='w-24' />
+				<h1 className='text-white mt-3 text-2xl'>
+					Positive Approval Consultancy
+				</h1>
+				<p className='text-white'>Embark on Your Real Estate Journey with Us</p>
+			</div>
+		</div>
 	);
 };
 

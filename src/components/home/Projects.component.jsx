@@ -2,8 +2,8 @@ import { SectionTitle } from '../';
 
 const Clients = () => {
 	return (
-		<div className='p-20 py-10 bg-gray-50 '>
-			<div className='max-w-screen-xl mx-auto'>
+		<div className='md:p-20 py-5 md:py-10 bg-gray-50 '>
+			<div className='md:max-w-screen-xl mx-auto w-full'>
 				<SectionTitle pretitle='Ongoing Clients' title='What are we working on'>
 					In the midst of development, our ongoing projects reflect our
 					dedication to creating exceptional properties through innovation,

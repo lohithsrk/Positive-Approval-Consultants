@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
- const Container = (props) => {
+const Container = (props) => {
 	return (
 		<div
-			className={`container p-8 mx-auto xl:px-0 ${
+			className={`container px-8 md:py-8 mx-auto xl:px-0 ${
 				props.className ? props.className : ''
 			}`}
 		>
@@ -10,6 +10,5 @@
 		</div>
 	);
 };
-
 
 export default Container;
