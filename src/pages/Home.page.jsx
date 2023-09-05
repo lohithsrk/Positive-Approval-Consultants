@@ -11,6 +11,7 @@ const Home = () => {
 		<div className='overflow-x-hidden'>
 			<Banner />
 			<Services />
+			
 			<Achievements />
 			<Projects />
 			<Testimonials />
