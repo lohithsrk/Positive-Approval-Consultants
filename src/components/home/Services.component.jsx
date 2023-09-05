@@ -42,7 +42,7 @@ const Services = () => {
 const Slide = ({ slideNo, title, description, link }) => {
 	return (
 		<div
-			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo} !min-w-[70%]`}
+			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo} `}
 		>
 			<span className='inline-block text-primary'>
 				<svg
