@@ -44,6 +44,7 @@ const Slide = ({ slideNo, title, description, link }) => {
 		<div
 			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo} `}
 		>
+			
 			<span className='inline-block text-primary'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
