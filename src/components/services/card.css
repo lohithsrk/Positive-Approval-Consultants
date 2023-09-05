@@ -1,0 +1,4 @@
+[class^='number-slide'],
+[class*=' number-slide'] {
+	@apply  md:!min-w-[384px] !min-w-[270px];
+}

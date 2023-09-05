@@ -59,16 +59,16 @@ const Achievements = () => {
 		};
 	}, [startClients, startDelivery, startVastu, startYear]);
 	return (
-		<div className='bg-primary w-full h-[60vh]' ref={ref}>
+		<div className='bg-primary w-full md:h-[60vh] h-auto py-10 md:py-0' ref={ref}>
 			<div className='max-w-screen-xl mx-auto h-full text-white text-center flex flex-col items-center justify-center'>
-				<h2 className='text-5xl mb-3'>What have we achieved</h2>
-				<p className='mb-14 text-xl'>
+				<h2 className='text-2xl md:text-5xl mb-3'>What have we achieved</h2>
+				<p className='mb-6 md:mb-14 text-base md:text-xl'>
 					We’re here to help you to finding a best way
 				</p>
-				<div className='flex gap-x-10'>
+				<div className='flex gap-x-10 flex-col md:flex-row gap-y-6 md:gap-y-0'>
 					<div>
 						<h1
-							className='text-5xl flex items-center justify-center'
+							className='text-3xl md:text-5xl flex items-center justify-center'
 							ref={yearRef}
 						/>
 						<h3 className='text-lg'>
@@ -78,7 +78,7 @@ const Achievements = () => {
 
 					<div>
 						<h1
-							className='text-5xl flex items-center justify-center'
+							className='text-3xl md:text-5xl flex items-center justify-center'
 							ref={vastuRef}
 						/>
 						<h3 className='text-lg'>
@@ -87,14 +87,14 @@ const Achievements = () => {
 					</div>
 					<div>
 						<h1
-							className='text-5xl flex items-center justify-center'
+							className='text-3xl md:text-5xl flex items-center justify-center'
 							ref={clientsRef}
 						/>
 						<h3 className='text-lg'>Happy Clients</h3>
 					</div>
 					<div>
 						<h1
-							className='text-5xl flex items-center justify-center'
+							className='text-3xl md:text-5xl flex items-center justify-center'
 							ref={deliveryRef}
 						/>
 						<h3 className='text-lg'>Sq,ft., Delivered</h3>

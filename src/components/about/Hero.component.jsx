@@ -4,24 +4,24 @@ import Container from './Container.component';
 const Hero = () => {
 	return (
 		<>
-			<Container className='flex flex-wrap bg-[url("/src/assets/about.jpg")] h-[60vh] relative after:absolute after:content-[""] after:bg-black/50 after:top-0 after:left-0 after:w-full after:h-full after:-z-0'>
-				<div className='flex items-center justify-center w-full absolute top-1/2 -translate-y-1/3 z-20 text-center'>
-					<div className='max-w-2xl'>
-						<h1 className='text-5xl font-bold leading-snug text-white lg:leading-tight xl:leading-tight '>
+			<Container className='flex flex-wrap items-center justify-center bg-[url("/src/assets/about.jpg")] md:h-[60vh] relative after:absolute after:content-[""] after:bg-black/50 after:top-0 after:left-0 after:w-full after:h-full after:-z-0'>
+				<div className='flex items-center justify-center w-full md:absolute top-1/2 md:-translate-y-1/3 z-20 text-center'>
+					<div className='max-w-2xl py-10 md:py-0'>
+						<h1 className='text-4xl md:text-5xl font-bold leading-snug text-white lg:leading-tight xl:leading-tight '>
 							Positive Approval Consultants
 						</h1>
-						<p className='py-5 text-lg leading-normal text-white/90'>
+						<p className='py-5 md:text-lg leading-normal text-white/90'>
 							At Positive Approval Consultants, we specialize in transforming
 							property aspirations into reality. With expertise spanning the
-							real estate spectrum, we're your dedicated partner for successful
-							projects.
+							real estate spectrum, we&apos;re your dedicated partner for
+							successful projects.
 						</p>
 					</div>
 				</div>
 			</Container>
 			<Container className='max-w-screen-xl mx-auto'>
 				<div className='flex flex-col justify-center'>
-					<div className='text-xl text-center text-gray-700 '>
+					<div className='text-xl text-center text-gray-700 mt-8 md:mt-0'>
 						Trusted by{' '}
 						<span className='text-indigo-600'>
 							<CountUp end={1000} start={0} duration={2} suffix='+' />

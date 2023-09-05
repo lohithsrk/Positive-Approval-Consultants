@@ -16,9 +16,11 @@ const Services = () => {
 	});
 	return (
 		<section className='bg-gray-50 '>
-			<div className='container px-6 py-10 max-w-screen-xl mx-auto pb-16'>
+			<div className='container px-6 py-3md:py-10 max-w-screen-xl mx-auto pb-16'>
 				<SectionTitle pretitle='Featured Services' title='What do we offer'>
-				We offer approval assistance, NOC and clearance services, construction management, and renovation expertise to simplify your real estate ventures and bring your property visions to life.
+					We offer approval assistance, NOC and clearance services, construction
+					management, and renovation expertise to simplify your real estate
+					ventures and bring your property visions to life.
 				</SectionTitle>
 
 				<div ref={sliderRef} className='keen-slider w-full cursor-grab'>
@@ -40,7 +42,7 @@ const Services = () => {
 const Slide = ({ slideNo, title, description, link }) => {
 	return (
 		<div
-			className={`p-8 space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo}`}
+			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo} !min-w-[70%]`}
 		>
 			<span className='inline-block text-primary'>
 				<svg

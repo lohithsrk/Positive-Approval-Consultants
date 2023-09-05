@@ -4,7 +4,7 @@ import { services } from '../utilities/constants.util';
 
 const Services = ({ title, description }) => {
 	return (
-		<div className=' pt-16 bg-gray-50'>
+		<div className='pt-8 md:pt-16 bg-gray-50'>
 			<Banner title={title} description={description} />
 			<div className='max-w-screen-xl mx-auto pb-12 bg-gray-50'>
 				<Section services={services.approval} />

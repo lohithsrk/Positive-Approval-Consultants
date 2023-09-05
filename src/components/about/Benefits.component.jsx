@@ -6,9 +6,9 @@ const Benefits = (props) => {
 	const { data } = props;
 	return (
 		<>
-			<Container className='flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap max-w-screen-xl mx-auto'>
+			<Container className='flex flex-wrap lg:gap-10 lg:flex-nowrap max-w-screen-xl mx-auto text-center md:text-left'>
 				<div
-					className={`flex items-center justify-center w-full lg:w-1/2 ${
+					className={`md:flex items-center justify-center w-full lg:w-1/2 hidden ${
 						props.imgPos === 'right' ? 'lg:order-1' : ''
 					}`}
 				>
@@ -31,7 +31,7 @@ const Benefits = (props) => {
 				>
 					<div>
 						<div className='flex flex-col w-full mt-4'>
-							<h3 className='max-w-2xl mt-3 text-3xl font-bold leading-snug  text-gray-800 lg:leading-tight lg:text-4xl'>
+							<h3 className='max-w-2xl mt-3 text-2xl font-bold leading-snug  text-gray-800 lg:leading-tight md:text-4xl'>
 								{data.title}
 							</h3>
 
@@ -40,7 +40,7 @@ const Benefits = (props) => {
 							</p>
 						</div>
 
-						<div className='w-full mt-5'>
+						<div className='w-full mt-5 text-left'>
 							{data.bullets.map((item, index) => (
 								<Benefit key={index} title={item.title} icon={item.icon}>
 									{item.desc}

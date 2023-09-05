@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useKeenSlider } from 'keen-slider/react';
+import './card.css';
 import 'keen-slider/keen-slider.min.css';
 
 import { SectionTitle } from '../';
@@ -23,8 +24,8 @@ const Section = ({ services }) => {
 				</SectionTitle>
 			</Link>
 
-			<div>
-				<div ref={sliderRef} className='keen-slider w-full cursor-grab'>
+			<div className='px-4'>
+				<div ref={sliderRef} className='keen-slider cursor-grab'>
 					{services.services &&
 						services.services.slice(0, 4).map((service, i) => (
 							<div
@@ -36,7 +37,7 @@ const Section = ({ services }) => {
 						))}
 					<Link
 						to={services.link}
-						className={`text-primary flex gap-1 items-center justify-center relative mt-6 w-96 h-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md keen-slider__slide number-slide hover:bg-blue-100  ${
+						className={`text-primary flex gap-1 items-center justify-center relative mt-6 md:w-[384px] h-[350px] md:h-[270px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md keen-slider__slide number-slide hover:bg-blue-100  ${
 							services.services && services.services.length
 						}`}
 					>
