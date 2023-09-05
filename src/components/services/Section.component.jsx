@@ -32,6 +32,7 @@ const Section = ({ services }) => {
 								className={` keen-slider__slide number-slide${i + 1}`}
 								key={i}
 							>
+								
 								<ServiceCard service={service} />
 							</div>
 						))}
