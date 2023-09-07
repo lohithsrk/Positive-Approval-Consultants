@@ -37,6 +37,7 @@ const Footer = () => {
 									<NavLink link='/' label='Home' />
 									<NavLink link='/about' label='About' />
 									<NavLink link='/services' label='Services' />
+									<NavLink link='/clients' label='Clients' />
 									<NavLink link='/contact' label='Contact' />
 								</LinkGroup>
 							</div>

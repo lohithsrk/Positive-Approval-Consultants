@@ -1,50 +1,51 @@
 /* eslint-disable react/prop-types */
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import { SectionTitle } from '../';
 import { services } from '../../utilities/constants.util';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
-	const [sliderRef] = useKeenSlider({
-		mode: 'free-snap',
-		slides: {
-			perView: 3.5,
-			spacing: 15
-		}
-	});
 	return (
 		<section className='bg-gray-50 '>
-			<div className='container px-6 py-3md:py-10 max-w-screen-xl mx-auto pb-16'>
+			<div className='container px-6 py-3 md:py-10 max-w-screen-xl mx-auto md:pb-16'>
 				<SectionTitle pretitle='Featured Services' title='What do we offer'>
 					We offer approval assistance, NOC and clearance services, construction
 					management, and renovation expertise to simplify your real estate
 					ventures and bring your property visions to life.
 				</SectionTitle>
 
-				<div ref={sliderRef} className='keen-slider w-full cursor-grab'>
+				<Swiper
+					spaceBetween={30}
+					pagination={{
+						clickable: true
+					}}
+					className='cursor-grab py-10 w-full relative h-fit'
+				>
 					{Object.keys(services).map((service, i) => (
-						<Slide
-							key={i}
-							slideNo={i + 1}
-							title={services[service].title}
-							description={services[service].description}
-							link={services[service].link}
-						/>
+						<SwiperSlide key={i} className='h-full relative !w-96'>
+							<Slide
+								title={services[service].title}
+								description={services[service].description}
+								link={services[service].link}
+							/>
+						</SwiperSlide>
 					))}
-				</div>
+				</Swiper>
 			</div>
 		</section>
 	);
 };
 
-const Slide = ({ slideNo, title, description, link }) => {
+const Slide = ({ title, description, link }) => {
 	return (
 		<div
-			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl keen-slider__slide number-slide${slideNo} `}
+			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl h-[350px] w-96`}
 		>
-			
 			<span className='inline-block text-primary'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

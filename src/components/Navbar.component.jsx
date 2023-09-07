@@ -14,40 +14,50 @@ const Navbar = () => {
 					/>
 				</Link>
 
-				<div className='flex items-center md:order-2 relative md:hidden'>
-					<button
-						data-collapse-toggle='navbar-sticky'
-						type='button'
-						className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100'
-						aria-controls='navbar-sticky'
-						aria-expanded='false'
+				<button
+					data-collapse-toggle='mobile-menu'
+					type='button'
+					className='md:hidden ml-3 text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center'
+					aria-controls='mobile-menu-2'
+					aria-expanded='false'
+				>
+					<span className='sr-only'>Open main menu</span>
+					<svg
+						className='w-6 h-6'
+						fill='currentColor'
+						viewBox='0 0 20 20'
+						xmlns='http:www.w3.org/2000/svg'
 					>
-						<span className='sr-only'>Open main menu</span>
-						<svg
-							className='w-5 h-5'
-							aria-hidden='true'
-							xmlns='http://www.w3.org/2000/svg'
-							fill='none'
-							viewBox='0 0 17 14'
-						>
-							<path
-								stroke='currentColor'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								d='M1 1h15M1 7h15M1 13h15'
-							/>
-						</svg>
-					</button>
-				</div>
+						<path
+							fill-rule='evenodd'
+							d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
+							clip-rule='evenodd'
+						></path>
+					</svg>
+					<svg
+						className='hidden w-6 h-6'
+						fill='currentColor'
+						viewBox='0 0 20 20'
+						xmlns='http:www.w3.org/2000/svg'
+					>
+						<path
+							fill-rule='evenodd'
+							d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
+							clip-rule='evenodd'
+						></path>
+					</svg>
+				</button>
 
 				<div
 					className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
-					id='navbar-sticky'
+					id='mobile-menu'
 				>
 					<ul className='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white'>
 						{navLinks.map((navLink, i) => (
-							<li key={i} className='flex items-center justify-center md:justify-normal'>
+							<li
+								key={i}
+								className='flex items-center justify-center md:justify-normal'
+							>
 								<NavLink
 									to={navLink.link}
 									className={({ isActive }) =>
