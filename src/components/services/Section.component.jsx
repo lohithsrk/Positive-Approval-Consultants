@@ -31,7 +31,7 @@ const Section = ({ services }) => {
 				>
 					{services.services &&
 						services.services.slice(0, 4).map((service, i) => (
-							<SwiperSlide key={i} className='!w-96'>
+							<SwiperSlide key={i} className='md:w-[384px]'>
 								<ServiceCard service={service} />
 							</SwiperSlide>
 						))}
