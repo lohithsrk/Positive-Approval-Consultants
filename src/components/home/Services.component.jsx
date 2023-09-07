@@ -27,7 +27,7 @@ const Services = () => {
 					className='cursor-grab py-10 w-full relative h-fit'
 				>
 					{Object.keys(services).map((service, i) => (
-						<SwiperSlide key={i} className='h-full relative !w-96'>
+						<SwiperSlide key={i} className='h-full relative md:!w-96'>
 							<Slide
 								title={services[service].title}
 								description={services[service].description}
@@ -44,7 +44,7 @@ const Services = () => {
 const Slide = ({ title, description, link }) => {
 	return (
 		<div
-			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl h-[350px] w-96`}
+			className={`p-4 md:p-8 space-y-2 md:space-y-3 border-2 border-primary rounded-xl h-[350px] md:w-96`}
 		>
 			<span className='inline-block text-primary'>
 				<svg
