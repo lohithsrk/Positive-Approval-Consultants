@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const ServiceCard = ({ service }) => {
 	return (
-		<div className='relative flex h-[350px] min-h-fit md:h-[270px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md'>
+		<div className='relative w-full flex h-[350px] min-h-fit md:h-[270px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md'>
 			<div className='p-6'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

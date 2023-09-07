@@ -20,7 +20,7 @@ const Section = ({ services }) => {
 				</SectionTitle>
 			</Link>
 
-			<div className='px-4'>
+			<div className='px-4 w-full relative'>
 				<Swiper
 					slidesPerView={3}
 					spaceBetween={30}
@@ -31,7 +31,7 @@ const Section = ({ services }) => {
 				>
 					{services.services &&
 						services.services.slice(0, 4).map((service, i) => (
-							<SwiperSlide key={i} className='md:w-[384px]'>
+							<SwiperSlide key={i} className='!w-full md:!w-96'>
 								<ServiceCard service={service} />
 							</SwiperSlide>
 						))}
