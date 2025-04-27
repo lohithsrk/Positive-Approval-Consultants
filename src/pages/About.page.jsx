@@ -5,7 +5,7 @@ import { benefitOne, benefitTwo } from '../utilities/constants.util';
 
 const About = () => {
 	return (
-		<div className=''>
+		<div>
 			<Hero />
 			<SectionTitle pretitle='PAC Benefits' title='How do we help you'>
 				We assist you by simplifying complex processes, securing essential

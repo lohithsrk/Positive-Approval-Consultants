@@ -24,7 +24,7 @@ const Contact = () => {
 		const { fullName, description, email, phone } = formDetails;
 		const subject = encodeURIComponent("New Contact Form Submission");
 		const body = encodeURIComponent(
-			`Full Name: ${fullName}\nDescription: ${description}\nEmail: ${email}\nPhone: ${phone}`
+			`Full Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nDescription: ${description}`
 		);
 
 		window.location.href = `mailto:positiveapproval@gmail.com?subject=${subject}&body=${body}`;
