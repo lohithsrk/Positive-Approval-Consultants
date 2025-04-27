@@ -8,10 +8,10 @@ const Hero = () => {
 				<div className='flex items-center justify-center w-full md:absolute top-1/2 md:-translate-y-1/3 z-20 text-center'>
 					<div className='max-w-2xl py-10 md:py-0'>
 						<h1 className='text-4xl md:text-5xl font-bold leading-snug text-white lg:leading-tight xl:leading-tight '>
-							Positive Approval Consultants
+							Positive Approvals
 						</h1>
 						<p className='py-5 md:text-lg leading-normal text-white/90'>
-							At Positive Approval Consultants, we specialize in transforming
+							At Positive Approvals, we specialize in transforming
 							property aspirations into reality. With expertise spanning the
 							real estate spectrum, we&apos;re your dedicated partner for
 							successful projects.

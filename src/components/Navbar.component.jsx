@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import { logo } from '../assets';
 
 const Navbar = () => {
+	const [isMobileNavOpened, setIsMobileNavOpened] = useState(false);
 	return (
 		<nav className='bg-white border-gray-200 shadow-lg md:fixed w-full z-50'>
 			<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-10 md:px-4'>
@@ -10,16 +12,14 @@ const Navbar = () => {
 					<img
 						src={logo}
 						className='h-12 mr-3'
-						alt='Positive Approval Consultants'
+						alt='Positive Approvals'
 					/>
 				</Link>
 
 				<button
-					data-collapse-toggle='mobile-menu'
 					type='button'
 					className='md:hidden ml-3 text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center'
-					aria-controls='mobile-menu-2'
-					aria-expanded='false'
+					onClick={() => setIsMobileNavOpened(!isMobileNavOpened)}
 				>
 					<span className='sr-only'>Open main menu</span>
 					<svg
@@ -49,8 +49,9 @@ const Navbar = () => {
 				</button>
 
 				<div
-					className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
-					id='mobile-menu'
+					className={`items-center justify-between ${
+						!isMobileNavOpened && 'hidden'
+					} w-full md:flex md:w-auto md:order-1`}
 				>
 					<ul className='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white'>
 						{navLinks.map((navLink, i) => (
@@ -75,7 +76,7 @@ const Navbar = () => {
 								to='/contact'
 								className={`text-center block py-2 pl-3 pr-4  bg-primary-hover rounded-lg text-white  bg-primary p-10`}
 							>
-								Book for consulting
+								Book Now
 							</NavLink>
 						</li>
 					</ul>
@@ -98,10 +99,10 @@ const navLinks = [
 		link: '/services',
 		name: 'Services'
 	},
-	{
-		link: '/clients',
-		name: 'Clients'
-	}
+	// {
+	// 	link: '/clients',
+	// 	name: 'Clients'
+	// }
 ];
 
 export default Navbar;

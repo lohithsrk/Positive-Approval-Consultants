@@ -51,7 +51,7 @@ function App() {
 						path='/services/renovation'
 						element={<IndividualService service={services.renovation} />}
 					/>
-					<Route path='/clients' element={<Clients />} />
+					{/* <Route path='/clients' element={<Clients />} /> */}
 					<Route path='/contact' element={<Contact />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>

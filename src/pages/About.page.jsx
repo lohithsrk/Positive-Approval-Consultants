@@ -14,7 +14,7 @@ const About = () => {
 			</SectionTitle>
 			<Benefits imgPos='left' data={benefitOne} />
 			<Benefits imgPos='right' data={benefitTwo} />
-			<Founders />
+			{/* <Founders /> */}
 			<Faq />
 			<Cta />
 		</div>

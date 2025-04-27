@@ -40,9 +40,9 @@ const Faq = () => {
 
 const faqdata = [
 	{
-		question: 'What services does Positive Approval Consultants offer?',
+		question: 'What services does Positive Approvals offer?',
 		answer:
-			'Positive Approval Consultants specializes in a range of services, including approval facilitation, NOC and clearance procurement, construction management, and renovation expertise. We are your trusted partner for all your project needs.'
+			'Positive Approvals specializes in a range of services, including approval facilitation, NOC and clearance procurement, construction management, and renovation expertise. We are your trusted partner for all your project needs.'
 	},
 	{
 		question: 'How long does the approval process typically take?',
@@ -56,7 +56,7 @@ const faqdata = [
 	},
 	{
 		question:
-			'What sets "Positive Approval Consultants" apart from other consulting firms?',
+			'What sets "Positive Approvals" apart from other consulting firms?',
 		answer:
 			'What distinguishes us is our people-centric approach, dedication to excellence, and commitment to transparency. We prioritize understanding your unique needs and challenges, tailoring our services to deliver optimal results.'
 	}

@@ -7,8 +7,8 @@ import {
 	HandThumbUpIcon
 } from '@heroicons/react/24/solid';
 
-import benefitOneImg from '/img/benefit-one.png';
-import benefitTwoImg from '/img/benefit-two.png';
+import benefitOneImg from '/img/benefit-one.webp';
+import benefitTwoImg from '/img/benefit-two.webp';
 
 export const primaryColor = '#0014b6';
 
@@ -307,7 +307,7 @@ export const services = {
 
 const benefitOne = {
 	title: 'Our Pinnacle Attributes',
-	desc: 'Discover what sets Positive Approval Consultants apart. Explore our core strengths and how we can make a difference in your journey, one milestone at a time.',
+	desc: 'Discover what sets Positive Approvals apart. Explore our core strengths and how we can make a difference in your journey, one milestone at a time.',
 	image: benefitOneImg,
 	bullets: [
 		{
@@ -330,7 +330,7 @@ const benefitOne = {
 
 const benefitTwo = {
 	title: "Our Business's Core Strengths and Values",
-	desc: 'Explore the essence of Positive Approval Consultants through our core strengths: Customer focus, acquisition expertise, retention mastery, streamlined processes, compliance excellence, and innovation-driven solutions. Discover success with us.',
+	desc: 'Explore the essence of Positive Approvals through our core strengths: Customer focus, acquisition expertise, retention mastery, streamlined processes, compliance excellence, and innovation-driven solutions. Discover success with us.',
 	image: benefitTwoImg,
 	bullets: [
 		{

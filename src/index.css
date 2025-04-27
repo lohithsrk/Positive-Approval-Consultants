@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:wght@500;600&display=swap');
+@import "flowbite/src/themes/default";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "flowbite/plugin";
 
 * {
 	@apply font-nunito font-[500];

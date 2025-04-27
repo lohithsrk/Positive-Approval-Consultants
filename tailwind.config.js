@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", "./index.html", "./node_modules/flowbite/**/*.js"
-
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html"
   ], theme: {
     extend: {
       fontFamily: {
@@ -10,9 +10,6 @@ export default {
         koulen: ['koulen', 'nunito'],
       },
     },
-  },
-  plugins: [
-    import('flowbite/plugin')
-  ],
+  }
 }
 

@@ -34,7 +34,7 @@ const Achievements = () => {
 		start: 0,
 		end: 1,
 		duration: 2.5,
-		suffix: '+Crore'
+		suffix: '+ Crore'
 	});
 	useEffect(() => {
 		const observer = new IntersectionObserver(

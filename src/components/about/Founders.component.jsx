@@ -2,7 +2,7 @@
 import SectionTitle from '../SectionTitle.component';
 import Container from './Container.component';
 
-import userOneImg from '/img/user1.jpg';
+import userOneImg from '/img/user1.webp';
 
 const Founders = () => {
 	return (

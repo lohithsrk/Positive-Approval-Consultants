@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { HiPhone } from 'react-icons/hi';
+import { HiMail, HiPhone } from 'react-icons/hi';
 
 import { logoWhite } from '../assets';
 
@@ -18,9 +18,17 @@ const Footer = () => {
 									Efficient solutions for seamless project compliance and
 									success.
 								</p>
+								<p className='mb-3 flex items-center text-sm font-medium text-dark'>
+									<HiMail color='#ffffff' className='w-5 h-5 mr-2' />
+									<span><a href="mailto:positiveapproval@gmail.com" className="hover:underline">
+										positiveapproval@gmail.com
+									</a></span>
+								</p>
 								<p className='flex items-center text-sm font-medium text-dark'>
 									<HiPhone color='#ffffff' className='w-5 h-5 mr-2' />
-									<span>+91 9884881302</span>
+									<span><a href="tel:+919894445595" className="hover:underline">
+										+91 9894445595
+									</a></span>
 								</p>
 							</div>
 						</div>
@@ -37,7 +45,7 @@ const Footer = () => {
 									<NavLink link='/' label='Home' />
 									<NavLink link='/about' label='About' />
 									<NavLink link='/services' label='Services' />
-									<NavLink link='/clients' label='Clients' />
+									{/* <NavLink link='/clients' label='Clients' /> */}
 									<NavLink link='/contact' label='Contact' />
 								</LinkGroup>
 							</div>
@@ -102,7 +110,7 @@ const Footer = () => {
 									</div>
 									<p className='text-base text-body-color'>
 										{' '}
-										© {new Date().getFullYear()} Positive Approval Consultancy
+										© {new Date().getFullYear()} Positive Approvals
 									</p>
 								</div>
 							</div>

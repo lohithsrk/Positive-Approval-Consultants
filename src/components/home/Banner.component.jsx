@@ -59,10 +59,10 @@ const Banner = () => {
 					>
 						<img src={logo} alt='APC' className='w-36' />
 						<h1 className='text-white mt-3 text-4xl'>
-							Positive Approval Consultancy
+							Positive Approvals
 						</h1>
 						<p className='text-white'>
-							Embark on Your Real Estate Journey with Us
+							Approvals Made Easy
 						</p>
 					</div>
 				</div>
@@ -70,9 +70,9 @@ const Banner = () => {
 			<div className='md:hidden w-full aspect-video text-center flex items-center justify-center flex-col absolute top-1/2 -translate-y-1/2'>
 				<img src={logo} alt='APC' className='w-24' />
 				<h1 className='text-white mt-3 text-2xl'>
-					Positive Approval Consultancy
+					Positive Approvals
 				</h1>
-				<p className='text-white'>Embark on Your Real Estate Journey with Us</p>
+				<p className='text-white'>Approvals Made Easy</p>
 			</div>
 		</div>
 	);
