@@ -24,7 +24,7 @@ const OurDNA = () => {
                     ventures and bring your property visions to life.
                 </SectionTitle>
 
-                <div className='flex flex-col md:flex-row gap-4 justify-center'>
+                <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                     {ourDNA.map((dna, i) => (
                         <div className='relative w-80' style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}>
                             <Slide
