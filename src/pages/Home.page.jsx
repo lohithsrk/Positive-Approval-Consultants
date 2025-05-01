@@ -1,7 +1,8 @@
 import {
 	Achievements,
+	MeetOurTeam,
 	Banner,
-	Projects,
+	OurDNA,
 	Services,
 	Testimonials
 } from '../components/home';
@@ -11,7 +12,9 @@ const Home = () => {
 		<div className='overflow-x-hidden'>
 			<Banner />
 			<Services />
+			<OurDNA />
 			<Achievements />
+			<MeetOurTeam />
 			{/* <Projects /> */}
 			<Testimonials />
 		</div>

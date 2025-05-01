@@ -91,10 +91,10 @@ const navLinks = [
 		link: '/',
 		name: 'Home'
 	},
-	{
-		link: '/about',
-		name: 'About'
-	},
+	// {
+	// 	link: '/about',
+	// 	name: 'About'
+	// },
 	{
 		link: '/services',
 		name: 'Services'

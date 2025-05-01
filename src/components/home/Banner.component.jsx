@@ -62,7 +62,7 @@ const Banner = () => {
 							Positive Approvals
 						</h1>
 						<p className='text-white'>
-							Approvals Made Easy
+							Expert Approvals, Efficient Results
 						</p>
 					</div>
 				</div>
@@ -72,7 +72,7 @@ const Banner = () => {
 				<h1 className='text-white mt-3 text-2xl'>
 					Positive Approvals
 				</h1>
-				<p className='text-white'>Approvals Made Easy</p>
+				<p className='text-white'>Expert Approvals, Efficient Results</p>
 			</div>
 		</div>
 	);

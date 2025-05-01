@@ -20,18 +20,17 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
+					{/* <Route path='/about' element={<About />} /> */}
 					<Route
 						path='/services'
 						element={
 							<Services
-								title='Imagination Breeds Real-world Excellence'
-								description='Discover our array of services, where we transform your ideas and dreams into tangible realities. With expertise in construction,
-								renovation, approvals, and more, we bring your vision to life.'
+								title='Approval & NOC Experts'
+								description='We provide end-to-end support for real estate approvals and compliance, covering CMDA, DTCP, Corporation, RERA, and NOC clearances—ensuring hassle-free project execution and regulatory alignment.'
 							/>
 						}
 					/>
-					<Route
+					{/* <Route
 						path='/services/approval'
 						element={<IndividualService service={services.approval} />}
 					/>
@@ -50,7 +49,7 @@ function App() {
 					<Route
 						path='/services/renovation'
 						element={<IndividualService service={services.renovation} />}
-					/>
+					/> */}
 					{/* <Route path='/clients' element={<Clients />} /> */}
 					<Route path='/contact' element={<Contact />} />
 					<Route path='*' element={<NotFound />} />

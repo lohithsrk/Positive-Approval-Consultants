@@ -23,6 +23,18 @@ const ServiceCard = ({ service }) => {
 				<p className='block font-sans text-base font-light leading-relaxed text-inherit antialiased'>
 					{service.description}
 				</p>
+				<div className="mt-3">
+					{service.points.map((point, i) => (
+						<div className="flex items-center mb-1">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 mr-1">
+								<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							</svg>
+							<p key={i} className='text-sm text-gray-500'>
+								{point}
+							</p>
+						</div>
+					))}
+				</div>
 				{/* <div className='p-6 pt-0'>
 				<a
 					className='!font-medium !text-blue-gray-900 !transition-colors hover:!text-primary'

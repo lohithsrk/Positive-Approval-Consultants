@@ -8,9 +8,7 @@ const About = () => {
 		<div>
 			<Hero />
 			<SectionTitle pretitle='PAC Benefits' title='How do we help you'>
-				We assist you by simplifying complex processes, securing essential
-				documents, and ensuring compliance. Our expertise paves the way for your
-				projects to succeed, turning your vision into reality.
+				Welcome to Positive Approval, we are trusted Partner for streamlined approval process. Our Expert Team navigates complex regulations ensuring timely and hassle-free permits for your residential, commercial and Industrial Projects.
 			</SectionTitle>
 			<Benefits imgPos='left' data={benefitOne} />
 			<Benefits imgPos='right' data={benefitTwo} />

@@ -33,17 +33,17 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='flex flex-col md:flex-row justify-center w-full md:w-auto'>
-							<div className='w-full grid grid-cols-2 justify-center relative md:mr-10'>
-								<LinkGroup header='Services'>
+							<div className='w-full relative md:mr-10'>
+								{/* <LinkGroup header='Services'>
 									<NavLink link='/services/approval' label='Approval' />
 									<NavLink link='/services/noc' label='NOC' />
 									<NavLink link='/services/clearance' label='Clearance' />
 									<NavLink link='/services/construction' label='Construction' />
 									<NavLink link='/services/renovation' label='Renovation' />
-								</LinkGroup>
+								</LinkGroup> */}
 								<LinkGroup header='Quick Links'>
 									<NavLink link='/' label='Home' />
-									<NavLink link='/about' label='About' />
+									{/* <NavLink link='/about' label='About' /> */}
 									<NavLink link='/services' label='Services' />
 									{/* <NavLink link='/clients' label='Clients' /> */}
 									<NavLink link='/contact' label='Contact' />
