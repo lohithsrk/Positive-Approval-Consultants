@@ -24,10 +24,9 @@ const OurDNA = () => {
                     ventures and bring your property visions to life.
                 </SectionTitle>
 
-                <div className='flex gap-4'>
+                <div className='flex flex-col md:flex-row gap-4'>
                     {ourDNA.map((dna, i) => (
-                        <div className='relative' style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}>
-
+                        <div className='relative w-80' style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}>
                             <Slide
                                 title={dna.title}
                                 description={dna.description}

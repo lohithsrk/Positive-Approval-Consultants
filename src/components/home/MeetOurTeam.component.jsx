@@ -10,7 +10,7 @@ const MeetOurTeam = () => (
             </SectionTitle>
             <div className='flex gap-5 w-full justify-center'>
                 {teamMembers.map((member, index) => (
-                    <div className='relative w-1/6 rounded-md'>
+                    <div className='relative w-1/2 md:w-1/6 rounded-md'>
                         <img src={member.image} alt={member.name} className='w-full h-full relative rounded-md' />
                         <div className='w-3/4 absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] bg-white flex flex-col justify-center items-center rounded-md p-3 z-10'>
                             <p>{member.name}</p>
@@ -34,12 +34,12 @@ const teamMembers = [
         image: mugilan,
         description: 'GP. Mugilan is the Architect and having master’s degree in management from IIM, Ahmedabad and in-depth knowledge in Real Estate industry across India. He is well versed in approval norms and preparation of approval Drawings.'
     },
-    {
-        name: 'Mr. P. Udhaya Baskar',
-        role: 'Rtd. CMDA Official',
-        image: sakthivignesh,
-        description: 'Over 30 years of experience in approval process and worked as a consultant for a leading real estate company. He has great understanding in Developer requirements and authorities’ norms.'
-    },
+    // {
+    //     name: 'Mr. P. Udhaya Baskar',
+    //     role: 'Rtd. CMDA Official',
+    //     image: sakthivignesh,
+    //     description: 'Over 30 years of experience in approval process and worked as a consultant for a leading real estate company. He has great understanding in Developer requirements and authorities’ norms.'
+    // },
     {
         name: 'Mr. S. Sakthi Vignesh',
         role: 'Legal Advisor',

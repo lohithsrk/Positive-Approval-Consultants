@@ -35,20 +35,19 @@ const Services = () => {
 				<Swiper
 					spaceBetween={30}
 					className='cursor-grab pt-10 w-full relative h-fit'
-					slidesPerView={3}
+					slidesPerView={window.innerWidth < 640 ? 1 : 3}
 					modules={[Pagination]}
 				>
 					{services.map((service, i) => (
 						<SwiperSlide
 							key={i}
-							className='h-full relative md:!w-80'
+							className='h-full relative !w-80'
 							style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}
 						>
 							<Slide
 								ref={(el) => (slideRefs.current[i] = el)}
 								title={service.title}
 								description={service.description}
-								link={service.link}
 							/>
 						</SwiperSlide>
 					))}
@@ -58,7 +57,7 @@ const Services = () => {
 	);
 };
 
-const Slide = React.forwardRef(({ title, description, link }, ref) => {
+const Slide = React.forwardRef(({ title, description }, ref) => {
 	return (
 		<div
 			ref={ref}
