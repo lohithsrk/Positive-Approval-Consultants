@@ -337,14 +337,6 @@ export const services = [
 		]
 	},
 	{
-		title: 'RERA',
-		description: "We provide tailored support ensuring timely RERA registration.",
-		points: [
-			"Registration of Projects",
-			"Filing Periodical compliance report"
-		]
-	},
-	{
 		title: 'Clearances from NOC agencies',
 		description: "We deliver integrated consultancy services for NOC clearances.",
 		points: [
@@ -357,6 +349,14 @@ export const services = [
 			"Elcot",
 			"CMRL",
 			"Other related NOCs."
+		]
+	},
+	{
+		title: 'RERA',
+		description: "We provide tailored support ensuring timely RERA registration.",
+		points: [
+			"Registration of Projects",
+			"Filing Periodical compliance report"
 		]
 	}
 ]
