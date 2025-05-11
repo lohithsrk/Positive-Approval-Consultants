@@ -20,7 +20,7 @@ const Banner = ({ title, description }) => {
 						alt=''
 					/>
 				</div>
-				<div className='relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8  mt-[5rem] lg:max-w-screen-xl'>
+				<div className='relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8  mt-[6rem] lg:max-w-screen-xl'>
 					<div className='mb-20 mt-16 lg:max-w-lg lg:pr-5'>
 						<h2 className='mb-5 font-sans text-3xl font-bold sm:text-4xl sm:leading-none'>
 							{title}

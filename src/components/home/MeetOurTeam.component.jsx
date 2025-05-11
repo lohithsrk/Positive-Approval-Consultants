@@ -10,7 +10,7 @@ const MeetOurTeam = () => (
             </SectionTitle>
             <div className='flex gap-5 w-full justify-center'>
                 {teamMembers.map((member, index) => (
-                    <div className='relative w-1/2 md:w-1/6 rounded-md'>
+                    <div key={index} className='relative w-1/2 md:w-1/6 rounded-md'>
                         <img src={member.image} alt={member.name} className='w-full h-full relative rounded-md' />
                         <div className='w-3/4 absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] bg-white flex flex-col justify-center items-center rounded-md p-3 z-10'>
                             <p>{member.name}</p>

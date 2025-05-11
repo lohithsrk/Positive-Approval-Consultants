@@ -410,19 +410,19 @@ const benefitTwo = {
 const ourDNA = [
 	{
 		title: "Transparency",
-		description: "We believe in open and honest communication. Our clients are kept informed at every stage with clear processes, ensuring trust and clarity throughout the approval journey."
+		description: "Open Communication & Clear Processes."
 	},
 	{
 		title: "Timely Completion",
-		description: "We understand the importance of deadlines. Our streamlined approach and proactive coordination ensure projects are delivered efficiently, every time."
+		description: "Efficient Delivery, Every time."
 	},
 	{
 		title: "Professional Approach",
-		description: "Our team brings a blend of technical expertise and courteous service. From the first consultation to final approval, professionalism is at the heart of all our interactions."
+		description: "Expertise & Courtesy in every interaction."
 	},
 	{
 		title: "Legal Compliance",
-		description: "With deep regulatory knowledge, we meticulously follow all statutory requirements, guaranteeing that every approval meets legal standards without compromise."
+		description: "Rigorous adherence to regulatory standards."
 	}
 ]
 

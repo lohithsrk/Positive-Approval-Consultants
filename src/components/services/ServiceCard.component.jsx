@@ -25,7 +25,7 @@ const ServiceCard = ({ service }) => {
 				</p>
 				<div className="mt-3">
 					{service.points.map((point, i) => (
-						<div className="flex items-center mb-1">
+						<div className="flex items-center mb-1" key={i}>
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 mr-1">
 								<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
 							</svg>

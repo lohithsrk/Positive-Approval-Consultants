@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,6 +13,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import 'swiper/css';
 
 const Services = () => {
+	const navigate = useNavigate();
 	const [maxHeight, setMaxHeight] = useState(0);
 	const slideRefs = useRef([]);
 
@@ -26,6 +28,9 @@ const Services = () => {
 	return (
 		<section className='bg-gray-50'>
 			<div className='container px-6 py-3 md:py-10 max-w-screen-xl mx-auto'>
+				<SectionTitle pretitle='welcome to' title='Positive Approvals'>
+					We are trusted Partner for streamlined approval process. Our Expert Team navigates complex regulations ensuring timely and hassle-free permits for your residential, commercial and Industrial Projects.
+				</SectionTitle>
 				<SectionTitle pretitle='Core Services' title='What do we offer'>
 					We offer approval assistance, NOC and clearance services, construction
 					management, and renovation expertise to simplify your real estate
@@ -48,6 +53,7 @@ const Services = () => {
 								ref={(el) => (slideRefs.current[i] = el)}
 								title={service.title}
 								description={service.description}
+								navigate={() => navigate("/services")}
 							/>
 						</SwiperSlide>
 					))}
@@ -57,7 +63,7 @@ const Services = () => {
 	);
 };
 
-const Slide = React.forwardRef(({ title, description }, ref) => {
+const Slide = React.forwardRef(({ title, description, navigate }, ref) => {
 	return (
 		<div
 			ref={ref}
@@ -70,7 +76,7 @@ const Slide = React.forwardRef(({ title, description }, ref) => {
 				</svg>
 			</span> */}
 
-			<h1 className='text-2xl font-semibold text-gray-700 capitalize'>{title}</h1>
+			<h1 className='text-2xl font-semibold text-gray-700 capitalize cursor-pointer' onClick={() => navigate()}>{title}</h1>
 			<p className='text-gray-500'>{description}</p>
 		</div>
 	);

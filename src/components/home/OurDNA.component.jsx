@@ -19,14 +19,12 @@ const OurDNA = () => {
         <section className='bg-gray-50 '>
             <div className='container px-6 py-3 md:py-10 max-w-screen-xl mx-auto md:pb-16'>
                 <SectionTitle pretitle='Our DNA' title='We are driven by'>
-                    We offer approval assistance, NOC and clearance services, construction
-                    management, and renovation expertise to simplify your real estate
-                    ventures and bring your property visions to life.
+                    
                 </SectionTitle>
 
                 <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                     {ourDNA.map((dna, i) => (
-                        <div className='relative w-80' style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}>
+                        <div key={i} className='relative w-80' style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }}>
                             <Slide
                                 title={dna.title}
                                 description={dna.description}
@@ -53,7 +51,7 @@ const Slide = React.forwardRef(({ title, description, link }, ref) => {
                 </svg>
             </span> */}
 
-            <h1 className='text-2xl font-semibold text-gray-700 capitalize'>{title}</h1>
+            <h1 className='text-xl font-semibold text-gray-700 capitalize'>{title}</h1>
             <p className='text-gray-500'>{description}</p>
         </div>
     );
